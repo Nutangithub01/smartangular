@@ -1,0 +1,111 @@
+.widget-sidebar {
+
+    position: relative;
+    width: 240px;
+    height: 100%;
+    margin-left: -240px;
+    z-index: 1024;
+    display: flex;
+    display: -ms-flexbox;
+    flex-direction: column;
+    padding: 0;
+    color: #fff;
+    background: green;
+    transition: margin 0.24s, opacity 0.24s;
+    overflow-y: auto;
+    opacity: 0;
+}
+
+.widget-sidebar i {
+    margin-right: 7px;
+}
+
+.widget-sidebar a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.widget-sidebar .dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.widget-sidebar [aria-expanded="false"]::after {
+    transition: transform 0.24s;
+    transform: rotate(-90deg);
+}
+
+ .widget-sidebar [aria-expanded="true"]::after {
+    transition: transform 0.24s;
+    transform: rotate(0deg);
+}
+
+.widget-sidebar a[aria-expanded="true"],
+.widget-sidebar a.active {
+    color: #fff;
+    background: #315472;
+}
+
+.widget-sidebar ul li a {
+    padding: 10px;
+    font-size: 1em;
+    display: block;
+    color: #e0e0e0;
+    text-decoration: none;
+    border-left: 2px solid transparent;
+}
+
+.widget-sidebar ul li a:hover {
+    background: #015401;
+    border-left: 2px solid #df9204;
+}
+
+.widget-sidebar ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+}
+
+ .widget-sidebar ul ul ul a {
+    padding-left: 50px !important;
+}
+
+ .widget-sidebar .active {
+    background-color: #015401;
+    border-left: 2px solid #df9204;
+}
+
+@media (min-width: 992px) 
+{
+    .widget-sidebar 
+    {
+        margin-left: 0px;
+        opacity: 1;
+    }
+}
+
+.widget-sidebar-context.sidebar-show .widget-sidebar {
+    margin-left: 0px;
+    opacity: 1;
+}
+
+.widget-sidebar-context.sidebar-hide .widget-sidebar {
+    margin-left: -180px;
+    opacity: 1;
+}
+
+.widget-sidebar-context.sidebar-hide .widget-sidebar ul li a i {
+    margin-left: 190px;
+}
+
+.widget-sidebar-context.sidebar-hide .widget-sidebar ul li a i span {
+    display: none;
+}
+
+.widget-sidebar ul 
+{
+    position: fixed;
+    width: 240px;
+}
+

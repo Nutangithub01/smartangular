@@ -1,0 +1,76 @@
+.white-bg 
+{
+    background: white;
+    margin: 15px;
+    padding: 15px;
+}
+.table_button_grp ul
+{
+    list-style-type: none;
+    display: flex;
+    margin-left: auto;
+}
+.table_button_grp ul li
+{
+    margin-right: 5px;
+}
+.table_header
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+.table_button_grp ul li button
+{
+    border-radius: 4px;
+    border-color: #f0f0f0;
+}
+.table_button_grp ul li:nth-child(3) button
+{
+    background-color: #df9204;
+    color: white 
+}
+.table_view_button
+{
+    text-decoration: none;
+    color:#df9204
+}
+
+
+/* current nav */
+#myDIV .btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  /* #myDIV .active, .btn:hover {
+    background-color: #666;
+    color: white;
+  } */
+
+#myDIV .btn
+{
+    background-color: white;
+    margin-left: 15px;
+}
+#myDIV .btn:focus,#myDIV .btn.active 
+{
+    box-shadow: none;
+    border-bottom: 3px solid orange;
+}
+#myDIV
+{
+    border-bottom: 2px solid gray;
+    margin-bottom: 15px;
+}
+
+.section3_img
+{
+    margin-bottom: 15px;
+}
+.section3_button_grp 
+{
+    text-align: center;
+}
